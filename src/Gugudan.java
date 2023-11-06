@@ -16,7 +16,7 @@ public class Gugudan {
         
         System.out.println(number * qwer);
 
-        /*int result = number * 1;                
+        int result = number * 1;                
         System.out.println("* 1 :" + number * 1 );
         System.out.println("* 2 :" + number * 2 );
         System.out.println("* 3 :" + number * 3 );
@@ -25,8 +25,14 @@ public class Gugudan {
         System.out.println("* 6 :" + number * 6 );
         System.out.println("* 7 :" + number * 7 );
         System.out.println("* 8 :" + number * 8 );
-        System.out.println("* 9 :" + number * 9 );*/
-        // 구구단 출력하는 예제 구현        
+        System.out.println("* 9 :" + number * 9 );
+        // 구구단 출력하는 예제 구현      
+        
+        int value = 1;
+        while (value < 10) {
+        	System.out.println(6 * value);
+        	value = value + 1;
+        }
 	}
 }
 
