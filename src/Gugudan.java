@@ -33,6 +33,9 @@ public class Gugudan {
         	System.out.println(6 * value);
         	value = value + 1;
         }
+        for(int Value = 1; Value < 10; Value++) {
+        System.out.println(7 * Value);
+        }
 	}
 }
 
