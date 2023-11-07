@@ -8,10 +8,21 @@ public class Gugudan {
 		return result;
 	}
 	
-	public static void main(String[] args) {
-		int[] result = calculate(2);
+	public static void print(int[] result) {
 		for(int i=0; i < result.length; i++) {
 			System.out.println(result[i]);
+		}
+	}
+	
+	public static void main(String[] args) {
+		int[] result = calculate(2);
+		print(result);
+		
+		int[] times3 = calculate(3);
+		print(times3);
+		
+		/*for(int i=0; i < result.length; i++) {
+			System.out.println(result[i]);*/
 		}
 //		System.out.println(result[4]);
 		
@@ -80,4 +91,4 @@ public class Gugudan {
 		}*/
 		
 	}
-}
+
