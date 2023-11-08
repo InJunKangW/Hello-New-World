@@ -14,7 +14,7 @@ public class Gugudan {
 		}
 	}
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int number = scanner.nextInt();
 		if(number < 10 && number > 1) {
@@ -26,12 +26,12 @@ public class Gugudan {
     		for(int i=0; i < result.length; i++) {
                result[i] = number * (i + 1); // 앞 단계 실습을 참고해 반복문을 활용해 result 배열에 결과 값을 담고 출력
                System.out.println(result[i]);*/
-        	}	
+      //  	}	
         
-        else{
+       // else{
         	
-        		System.out.println("구구단을 출력할 수 없습니다.");
-        	}
+       // 		System.out.println("구구단을 출력할 수 없습니다.");
+     //   	}
 		
 		
 		
@@ -111,5 +111,5 @@ public class Gugudan {
 		
 		}*/
 		
-	}
+	//}
 
