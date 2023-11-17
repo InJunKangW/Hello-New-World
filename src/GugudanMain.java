@@ -5,9 +5,9 @@ public class GugudanMain {
 		System.out.println("곱하고 싶은 숫자를 고르세요 (2 이상, 9 이하.)");
 		Scanner scanner = new Scanner(System.in);
 		int number = scanner.nextInt();
-		if(number < 100 && number > 1) {
+		if(number < 10 && number > 1) {
 			
-			System.out.println("그 수에 곱할 숫자를 고르세요(1, 2, 3 ... n까지 곱한 모든 숫자가 표시됩니다.)");
+			System.out.println("30 미만의, 그 수에 곱할 정수 N을 고르세요(1, 2, 3 ... N까지 곱한 모든 숫자가 표시됩니다.)");
 			int[] result = Gugudan.calculate(number);
 			Gugudan.print(result);
 			

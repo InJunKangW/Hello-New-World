@@ -3,18 +3,19 @@ public class Gugudan {
 	public static int[] calculate(int times) {
 		Scanner scanner = new Scanner(System.in);
 		int second = scanner.nextInt();
-		int[] result = new int[second];
-		
-		if(second < 30){
-		for(int i=0; i < result.length; i++){
-			result[i] = times * (i+1);
+		//int[] result = new int[second];
+		if(second <30) {
+			int[] result = new int[second];
+		for(int i=0; i < second; i++){
+		result[i] = times * (i+1);
 		}
 		return result;
-		
-		
 		}
 		else {
-			System.out.println("잘못된 숫자를 입력했습니다. 30 미만의 숫자를 입력해주세요.");
+			System.out.println("잘못된 값을 지정했습니다. 30 미만의 숫자를 적어주세요.");
+			int[] result = new int[0];
+			return result;
+			
 		}
 	}
 	public static void print(int[] result) {
