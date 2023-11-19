@@ -1,10 +1,25 @@
  import java.util.Scanner;
 public class Gugudan {
 	public static int[] calculate(int times) {
-		Scanner scanner = new Scanner(System.in);
-		int second = scanner.nextInt();
-		//int[] result = new int[second];
-		if(second <30) {
+		int[] result = new int[0];
+		boolean thirty = true;
+		while(thirty){			
+			
+			Scanner scanner = new Scanner(System.in);
+			int second = scanner.nextInt();
+			if(second < 30) {
+				result = new int[second];
+				for(int i=0; i < second; i++){
+					result[i] = times * (i+1);
+					}
+				break;
+			}
+			else {
+				System.out.println("잘못된 값을 지정했습니다. 30 미만의 숫자를 적어주세요.");
+			}
+					}
+		return result;
+		/*if(second <30) {
 			int[] result = new int[second];
 		for(int i=0; i < second; i++){
 		result[i] = times * (i+1);
@@ -13,10 +28,12 @@ public class Gugudan {
 		}
 		else {
 			System.out.println("잘못된 값을 지정했습니다. 30 미만의 숫자를 적어주세요.");
+			
 			int[] result = new int[0];
 			return result;
 			
 		}
+		*/
 	}
 	public static void print(int[] result) {
 		for(int i=0; i < result.length; i++) {
