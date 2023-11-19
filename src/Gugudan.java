@@ -1,22 +1,25 @@
  import java.util.Scanner;
 public class Gugudan {
 	public static int[] calculate(int times) {
-		int[] result = new int[0];
-		boolean thirty = true;
+		int[] result = new int[0]; //일단은 배열의 길이를 0으로 지정.
+		boolean thirty = true; //while 문을 무한반복하기 위함.
 		while(thirty){			
 			
 			Scanner scanner = new Scanner(System.in);
 			int second = scanner.nextInt();
 			if(second < 30) {
 				result = new int[second];
+				// 4번 없이 여기서 새로 int[]result를 지정하면, 오류가 남.
+				// 배열의 길이를 새로 지정하는 방법임.
 				for(int i=0; i < second; i++){
-					result[i] = times * (i+1);
+					result[i] = times * (i+1); 
 					}
 				break;
+				//scanner 값이 30 미만이면 스캐너 값을 입력받고 다시 조건을 따지는 것을 멈추고 while문을 탈출
 			}
 			else {
 				System.out.println("잘못된 값을 지정했습니다. 30 미만의 숫자를 적어주세요.");
-			}
+			}//break가 없으므로 이후 다시 while문의 처음으로 돌아가 실행함.
 					}
 		return result;
 		/*if(second <30) {
