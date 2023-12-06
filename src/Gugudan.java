@@ -35,7 +35,7 @@ public class Gugudan {
 			int[] result = new int[0];
 			return result;
 			
-		}
+		}//s
 		*/
 	}
 	public static void print(int[] result) {
