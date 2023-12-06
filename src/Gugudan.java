@@ -20,7 +20,7 @@ public class Gugudan {
 			else {
 				System.out.println("잘못된 값을 지정했습니다. 30 미만의 숫자를 적어주세요.");
 			}//break가 없으므로 이후 다시 while문의 처음으로 돌아가 실행함.
-					}
+					}//
 		return result;
 		/*if(second <30) {
 			int[] result = new int[second];
