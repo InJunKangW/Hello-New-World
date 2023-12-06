@@ -1,5 +1,8 @@
 import java.util.Scanner;
 public class calendar {
+	private static final int[] maxDaysOfMonths = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	
+	
 	public static void main(String[] args) {
 		System.out.println("반복 횟수를 입력하세요.");
 		Scanner scanner = new Scanner(System.in);
